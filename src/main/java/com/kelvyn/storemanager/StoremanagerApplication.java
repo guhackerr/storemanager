@@ -1,3 +1,4 @@
+
 package com.kelvyn.storemanager;
 
 import org.springframework.boot.SpringApplication;
