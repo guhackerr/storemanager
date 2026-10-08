@@ -21,12 +21,8 @@ public class Game {
     private String gamename;
 
     private LocalDate release;
-
     private String urlGame;
-
     private String description;
-
     private String developer;
-
     private BigDecimal price;
 }

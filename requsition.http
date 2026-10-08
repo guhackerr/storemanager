@@ -1,0 +1,12 @@
+POST http://localhost:8080/games
+Content-Type: application/json
+
+{
+  "id": "jogo-2",
+  "gamename": "Meu jogo2",
+  "release": "2022-01-01",
+  "urlGame": "https://example2.com",
+  "description": "Descrição do jogo",
+  "developer": "Estúdio",
+  "price": 19.99
+}
