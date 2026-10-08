@@ -10,11 +10,15 @@ import com.kelvyn.storemanager.gameservice.GameService;
 import com.kelvyn.storemanager.model.Game;
 
 @RestController 
-@RequestMapping("/games")
+@RequestMapping("/books")
 public class GameController {
     
-    @Autowired
-    private GameService gameService;
+    private final GameService gameservice;
+
+    public GameController(GameService gameService){
+        this.gameservice = gameService;
+    }
+
 
     @GetMapping 
     public List<Game> listar(){

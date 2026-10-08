@@ -4,7 +4,6 @@ package com.kelvyn.storemanager.gameservice;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.kelvyn.storemanager.model.Game;
@@ -12,9 +11,12 @@ import com.kelvyn.storemanager.repository.GameRepository;
 
 @Service 
 public class GameService {
+    private final GameRepository gameRepository;
 
-    @Autowired 
-    private GameRepository gameRepository;
+    public GameService(GameRepository gameRepository) {
+
+        this.gameRepository = gameRepository;
+    }
 
     public List<Game> listarGames(){
         return gameRepository.findAll();
