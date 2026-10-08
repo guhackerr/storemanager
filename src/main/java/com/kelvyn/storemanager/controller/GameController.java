@@ -13,10 +13,10 @@ import com.kelvyn.storemanager.model.Game;
 @RequestMapping("/books")
 public class GameController {
     
-    private final GameService gameservice;
+    private final GameService gameService;
 
     public GameController(GameService gameService){
-        this.gameservice = gameService;
+        this.gameService = gameService;
     }
 
 
